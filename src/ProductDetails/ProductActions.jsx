@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './ProductActions.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CartContext } from '../CartContext';
+import { CartContext } from '../Cart/CartContext';
 
 const ProductActions = ({ Product, count, onBuyNow }) => {
   const [quantity, setQuantity] = useState(1);

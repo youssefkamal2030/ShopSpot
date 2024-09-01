@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import ProdcutList from "./ProdcutList";
+import ProdcutList from "./ProductListng/ProdcutList"
 function Home() {
   return (
     <div className="home">

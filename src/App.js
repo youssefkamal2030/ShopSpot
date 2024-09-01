@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import './App.css';
 import Header from './Header';
-import Login from './Login';
-import Slider from './Slider';
+import Login from './login/Login';
+import Slider from './ProductListng/Slider';
 import ProductDetails from './ProductDetails/ProductDetails';
-import { CartProvider } from './CartContext';
-import Cart from './Cart';
+import { CartProvider } from './Cart/CartContext';
+import Cart from './Cart/Cart';
 function App() {
   return (
     <div className="app">
