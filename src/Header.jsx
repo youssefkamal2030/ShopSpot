@@ -52,8 +52,6 @@ function Header() {
             <span className="header__optionLineTwo">Prime</span>
           </div>
         </Link>
-
-        {/* Link to Cart */}
         <Link to="/cart">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />

@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
@@ -8,6 +9,8 @@ import Slider from './ProductListng/Slider';
 import ProductDetails from './ProductDetails/ProductDetails';
 import { CartProvider } from './Cart/CartContext';
 import Cart from './Cart/Cart';
+import Checkout from './CheckOut/Checkout';
+
 function App() {
   return (
     <div className="app">
@@ -18,6 +21,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/productDetails/:id" element={<ProductDetails />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route
               path="/"
               element={
@@ -28,7 +32,6 @@ function App() {
               }
             />
           </Routes>
-       
         </Router>
       </CartProvider>
     </div>
