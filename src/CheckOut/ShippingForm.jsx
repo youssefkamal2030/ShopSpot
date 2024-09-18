@@ -1,6 +1,5 @@
-// src/ShippingForm.js
 import React, { useState } from 'react';
-
+import './ShippingForm.css'; 
 const ShippingForm = ({ onShippingSubmit }) => {
   const [shippingInfo, setShippingInfo] = useState({
     name: '',
@@ -21,14 +20,56 @@ const ShippingForm = ({ onShippingSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Shipping Information</h2>
-      <input type="text" name="name" placeholder="Name" value={shippingInfo.name} onChange={handleChange} required />
-      <input type="text" name="address" placeholder="Address" value={shippingInfo.address} onChange={handleChange} required />
-      <input type="text" name="city" placeholder="City" value={shippingInfo.city} onChange={handleChange} required />
-      <input type="text" name="state" placeholder="State" value={shippingInfo.state} onChange={handleChange} required />
-      <input type="text" name="postalCode" placeholder="Postal Code" value={shippingInfo.postalCode} onChange={handleChange} required />
-      <button type="submit">Continue to Payment</button>
+    <form className="shipping-form" onSubmit={handleSubmit}>
+      <h2 className="shipping-form__title">Shipping Information</h2>
+      <div className="shipping-form__input-group">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={shippingInfo.name}
+          onChange={handleChange}
+          required
+          className="shipping-form__input"
+        />
+        <input
+          type="text"
+          name="address"
+          placeholder="Address"
+          value={shippingInfo.address}
+          onChange={handleChange}
+          required
+          className="shipping-form__input"
+        />
+        <input
+          type="text"
+          name="city"
+          placeholder="City"
+          value={shippingInfo.city}
+          onChange={handleChange}
+          required
+          className="shipping-form__input"
+        />
+        <input
+          type="text"
+          name="state"
+          placeholder="State"
+          value={shippingInfo.state}
+          onChange={handleChange}
+          required
+          className="shipping-form__input"
+        />
+        <input
+          type="text"
+          name="postalCode"
+          placeholder="Postal Code"
+          value={shippingInfo.postalCode}
+          onChange={handleChange}
+          required
+          className="shipping-form__input"
+        />
+      </div>
+      <button type="submit" className="shipping-form__button">Continue to Payment</button>
     </form>
   );
 };

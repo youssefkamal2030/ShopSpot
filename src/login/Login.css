@@ -85,7 +85,23 @@
 }
 
 .login__registerButton {
+  display: inline-block;
   background: white;
   border: 2px solid #a88734;
   color: #333;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; /* Vertically center the text */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login__registerButton:hover {
+  background: #f0c14b;
+  transform: translateY(-2px);
 }

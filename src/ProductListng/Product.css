@@ -6,9 +6,9 @@
   margin: 10px;
   padding: 20px;
   width: 100%;
-  max-width: 240px; 
+  max-width: 240px;
   background-color: #fff;
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -28,17 +28,16 @@
 .product__price {
   margin-top: 5px;
   font-weight: bold;
-  color: #b12704; 
+  color: #b12704;
 }
 
 .product > img {
-  max-height: 200px;
+  max-height: 100px;
   width: auto;
   object-fit: contain;
   margin-bottom: 15px;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
-
 
 .product__rating {
   display: flex;
@@ -49,28 +48,7 @@
 .product__rating p {
   margin: 0; /* Remove default margin */
 }
-.Container {
-  padding: 20px;
-}
 
-.row-3 {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
-  gap: 20px; /* Space between items */
-}
-
-.col-20 {
-  flex: 1 1 calc(20% - 40px); /* Adjust width of columns, considering the gap */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
-.Card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6%;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 .product__button {
   display: inline-block;
   background: #ff9900;
@@ -87,4 +65,28 @@
 .product__button:hover {
   background: black;
   transform: translateY(-2px);
+}
+
+/* Ensure that these classes integrate smoothly */
+.Container {
+  padding: 20px;
+}
+
+.row-3 {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+  gap: 16px; /* Space between items */
+}
+
+.col-20 {
+  flex: 1 1 calc(20% - 40px); 
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.Card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6%;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

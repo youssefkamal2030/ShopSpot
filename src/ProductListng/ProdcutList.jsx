@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext,useEffect, useState } from 'react';
 import Product from './ProductCard';
-
+import { ProductContext } from '../AppProvider';
 const ProductList = () => {
-    const [products, setProducts] = useState([]);
-    const api_url = 'https://fakestoreapi.com/products';
-
-    useEffect(() => {
-        fetch(api_url)
-            .then((res) => res.json())
-            .then((data) => setProducts(data));
-    }, []);
-
+    const { products } = useContext(ProductContext);
     return (
         <div className="container">
             <div className="row-3">

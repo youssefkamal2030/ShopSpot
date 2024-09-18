@@ -19,7 +19,7 @@
   
   .image-gallery .main-image {
     max-height: 400px;
-    object-fit: contain;
+    object-fit: cover; 
   }
   
   .thumbnails img {

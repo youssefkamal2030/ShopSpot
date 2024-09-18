@@ -1,0 +1,53 @@
+/* src/components/OrderReview.css */
+
+.order-review {
+    background-color: #fff; /* White background for the review section */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Maximum width of the review container */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .order-review h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #232f3e; /* Dark blue color for the title */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .order-review h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232f3e; /* Dark blue color for the section headings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .order-review p {
+    font-size: 16px;
+    color: #555; /* Dark gray color for the text */
+    margin: 5px 0; /* Spacing between lines of text */
+  }
+  
+  .order-review button {
+    background-color: #ff9900; /* Amazon Orange */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .order-review button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+    transform: scale(1.02); /* Slightly scale up button on hover */
+  }
+  
